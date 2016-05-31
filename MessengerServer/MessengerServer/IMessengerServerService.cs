@@ -1,4 +1,5 @@
-﻿using System.ServiceModel;
+﻿using System.Collections.Generic;
+using System.ServiceModel;
 
 namespace MessengerServer
 {
@@ -6,19 +7,19 @@ namespace MessengerServer
     public interface IMessengerServerService
     {
         [OperationContract]
-        void UploadUserData(string username);
+        Profile UploadUserData(string username);//log in
 
         [OperationContract]
-        void RefreshUserData(string username);
+        List<string> RefreshUserData(string username);
 
-        [OperationContract]
+        [OperationContract(IsOneWay = true)]
         void SendMessage(string usernameSenders, string usernameReceiver, string message);
 
         [OperationContract]
-        void FindUser(string requiredUsername);
+        bool FindUser(string requiredUsername);
 
         [OperationContract]
-        void UserStatusCheck(string requiredUsername);
+        bool UserStatusCheck(string requiredUsername);
 
         //[OperationContract(IsOneWay = true)]
         //void GetMessage(string usernameReceiver);
@@ -29,8 +30,11 @@ namespace MessengerServer
 
     [ServiceContract]
     public interface IMessengerServerServiceCallback
-    {
+    { 
         [OperationContract(IsOneWay = true)]
         void LoadMessage(string usernameReceiver, string message);
+
+        [OperationContract(IsOneWay = true)]
+        void ContactsStatusUpdate(string usernameReceiver, bool online);
     }
 }

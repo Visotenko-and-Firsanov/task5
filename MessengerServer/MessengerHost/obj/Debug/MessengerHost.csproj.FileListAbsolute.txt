@@ -1,0 +1,25 @@
+E:\Programming\с#\MessengerServer\MessengerHost\bin\Debug\MessengerHost.exe.config
+E:\Programming\с#\MessengerServer\MessengerHost\bin\Debug\MessengerHost.exe
+E:\Programming\с#\MessengerServer\MessengerHost\bin\Debug\MessengerHost.pdb
+E:\Programming\с#\MessengerServer\MessengerHost\obj\Debug\MessengerHost.csprojResolveAssemblyReference.cache
+E:\Programming\с#\MessengerServer\MessengerHost\obj\Debug\MessengerHost.exe
+E:\Programming\с#\MessengerServer\MessengerHost\obj\Debug\MessengerHost.pdb
+E:\Programming\с#\MessengerServer\MessengerHost\bin\Debug\MessengerServer.dll
+E:\Programming\с#\MessengerServer\MessengerHost\bin\Debug\MessengerServer.pdb
+C:\Programming\с#\MessengerServer\MessengerHost\bin\Debug\MessengerHost.exe.config
+C:\Programming\с#\MessengerServer\MessengerHost\obj\Debug\MessengerHost.exe
+C:\Programming\с#\MessengerServer\MessengerHost\obj\Debug\MessengerHost.pdb
+C:\Programming\с#\MessengerServer\MessengerHost\bin\Debug\MessengerHost.exe
+C:\Programming\с#\MessengerServer\MessengerHost\bin\Debug\MessengerHost.pdb
+C:\Programming\с#\MessengerServer\MessengerHost\bin\Debug\MessengerServer.dll
+C:\Programming\с#\MessengerServer\MessengerHost\bin\Debug\EntityFramework.dll
+C:\Programming\с#\MessengerServer\MessengerHost\bin\Debug\MessengerServer.pdb
+C:\Programming\с#\MessengerServer\MessengerHost\bin\Debug\EntityFramework.xml
+C:\Programming\с#\MessengerServer\MessengerHost\obj\Debug\MessengerHost.csprojResolveAssemblyReference.cache
+C:\Programming\с#\MessengerServer\MessengerHost\bin\Debug\ru\EntityFramework.resources.dll
+E:\Учёба\МП\Думов\MessengerServer\MessengerHost\bin\Debug\MessengerHost.exe.config
+E:\Учёба\МП\Думов\MessengerServer\MessengerHost\obj\Debug\MessengerHost.exe
+E:\Учёба\МП\Думов\MessengerServer\MessengerHost\obj\Debug\MessengerHost.pdb
+E:\Новая папка (2)\task5\MessengerServer\MessengerHost\bin\Debug\MessengerHost.exe.config
+E:\Новая папка (2)\task5\MessengerServer\MessengerHost\obj\Debug\MessengerHost.exe
+E:\Новая папка (2)\task5\MessengerServer\MessengerHost\obj\Debug\MessengerHost.pdb
