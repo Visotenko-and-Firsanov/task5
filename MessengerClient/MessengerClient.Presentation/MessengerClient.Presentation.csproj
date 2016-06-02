@@ -40,14 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContactsListViewModel.cs" />
     <Compile Include="ContaсtsListPresenter.cs" />
     <Compile Include="IConection.cs" />
     <Compile Include="IMainWindowView.cs" />
-    <Compile Include="IMessageHistory.cs" />
     <Compile Include="INameWindowView.cs" />
+    <Compile Include="INewContactWindowView.cs" />
     <Compile Include="IStorage.cs" />
-    <Compile Include="IView.cs" />
+    <Compile Include="MyProfileEdditor.cs" />
     <Compile Include="MyProfilePresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

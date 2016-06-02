@@ -11,13 +11,13 @@ using MessengerClient.Presentation;
 
 namespace MessengerClient.Dal
 {
-    public class LocalStorage:IStorage
+    public class LocalStorage : IStorage
     {
         private string _sourcePath;
 
-        public LocalStorage(string sourcePath)
+        public LocalStorage(string name)
         {
-            _sourcePath = sourcePath;
+            _sourcePath = GeneretaPath(name);
         }
         public LocalStorage()
         { }
@@ -39,22 +39,32 @@ namespace MessengerClient.Dal
 
             IFormatter formatter = new BinaryFormatter();
 
-            var stream = new FileStream(_sourcePath, FileMode.Create);
 
-            var profile = (MyProfile)formatter.Deserialize(stream);
+            var stream = new FileStream(_sourcePath, FileMode.OpenOrCreate);
+
+            MyProfile profile = new MyProfile();
+
+            try
+            {
+                profile = (MyProfile)formatter.Deserialize(stream);
+            }
+            catch (SerializationException e)
+            {
+
+                profile.MyName = name;
+            }
 
             stream.Close();
 
             return profile;
         }
+
         private string GeneretaPath(string name)
         {
             StringBuilder path = new StringBuilder();
 
             path.Append("../../../users/");
             path.Append(name);
-            path.Append("/");
-            path.Append("Profile");
 
             return path.ToString();
         }

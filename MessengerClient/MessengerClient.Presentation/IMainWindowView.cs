@@ -1,14 +1,22 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MessengerClient.Presentation
 {
     public interface IMainWindowView
     {
-        IEnumerable ContaktsSource { get; set; }
+        Dictionary<string, string> ContaktsMessageHistory { get; set; }
+        Dictionary<string, bool> OnlineContactsList { get; set; }
+        string Message { get; set; }
+        string ActiveContact { get; set; }
+        void UpdateContacts(IEnumerable contaktsList);
+
+        INewContactWindowView CreateContactWindow();
+
+        event EventHandler DeleteContact;
+        event EventHandler SendMessage;
+        event EventHandler AddNewContakt;
+        event EventHandler SaveProfile;
     }
 }

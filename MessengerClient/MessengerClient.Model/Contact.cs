@@ -10,9 +10,8 @@ namespace MessengerClient.Model
     [Serializable]
     public class Contact
     {
-        public Stack<string> MessageHistory { get; set; }
+        public string MessageHistory { get; set; }
         public string Name { get; set; }
         public bool Online { get; set; }
-        public bool Friend { get; set; }
     }
 }

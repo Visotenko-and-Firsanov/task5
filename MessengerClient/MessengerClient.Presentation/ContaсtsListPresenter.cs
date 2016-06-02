@@ -1,21 +1,29 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using MessengerClient.Model;
 
 namespace MessengerClient.Presentation
 {
-    public static class ContaсtsListPresenter
+    public static class ContaktsListPresenter
     {
-        public static IEnumerable GetContaсtsViewModel(List<Contact> contacts)
+        public static void GetContaktsViewModel(List<Contact> contacts, IMainWindowView view)
         {
-            List<string> contactsNameList = contacts.Select(contact => contact.Name).ToList();
+            if (contacts == null)
+                return;
 
-            return (IEnumerable)contactsNameList;
+            List<string> contactsNameList = new List<string>();
+            Dictionary<string, string> contactsMessegeList = new Dictionary<string, string>();
+            Dictionary<string, bool> onlineContactsList = new Dictionary<string, bool>();
+
+            foreach (var cont in contacts)
+            {
+                contactsNameList.Add(cont.Name);
+                contactsMessegeList.Add(cont.Name, cont.MessageHistory);
+                onlineContactsList.Add(cont.Name, cont.Online);
+            }
+
+            view.ContaktsMessageHistory = contactsMessegeList;
+
+            view.UpdateContacts(contactsNameList);
         }
-
     }
 }
