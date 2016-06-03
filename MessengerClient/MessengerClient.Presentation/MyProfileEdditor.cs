@@ -24,7 +24,7 @@ namespace MessengerClient.Presentation
             var i = FindIndex(profile.MyContacts, contactName);
 
             if (i == -1)
-                throw new Exception("Нету нужного контакта для отправки сообщения");
+                throw new Exception("Нет нужного контакта для отправки сообщения");
 
             StringBuilder newMessage = new StringBuilder();
 

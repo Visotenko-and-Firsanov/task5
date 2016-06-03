@@ -6,16 +6,17 @@
         xmlns:local="clr-namespace:MessengerClient"
         mc:Ignorable="d"
         Title="MainWindow" Height="428.803" Width="733.135" 
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Closed="Messenger_Unload">
     <Grid x:Name="Messenger" Margin="0,0,2,0" RenderTransformOrigin="0.492,0.489">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="573*"/>
             <ColumnDefinition Width="112*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="messegeHistory" HorizontalAlignment="Left" Height="299" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="540" RenderTransformOrigin="0.498,0.491"/>
-        <TextBox x:Name="messageField" HorizontalAlignment="Left" Height="53" Margin="10,325,0,0" TextWrapping="Wrap" Text="Введите текст сообщения" VerticalAlignment="Top" Width="540"/>
-        <Button x:Name="button" Content="Send" HorizontalAlignment="Left" Height="53" Margin="462,325,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.508,0.521" Click="button_Click"/>
-        <ListView x:Name="listView" ItemsSource="{DynamicResource ContaktsSource}" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="299" Margin="570,10,0,0" VerticalAlignment="Top" Width="143" IsSynchronizedWithCurrentItem="False" SelectionChanged="listView_SelectionChanged">
+        <TextBox x:Name="messegeHistory" HorizontalAlignment="Left" Height="299" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="540" RenderTransformOrigin="0.498,0.491" ScrollViewer.CanContentScroll="True"/>
+        <TextBox x:Name="messageField" HorizontalAlignment="Left" Height="53" Margin="10,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452" ScrollViewer.CanContentScroll="True"/>
+        <Button x:Name="sendMessageButton" Content="Send" HorizontalAlignment="Left" Height="53" Margin="462,325,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.508,0.521" Click="Send" IsDefault="True" IsEnabled="False"/>
+        <ListView x:Name="listView"  Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="299" Margin="570,10,0,0" VerticalAlignment="Top" Width="143" IsSynchronizedWithCurrentItem="False" SelectionChanged="listView_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridView.Columns>
@@ -24,7 +25,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="removeButton" Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.ColumnSpan="2" Margin="570,324,0,0" IsEnabled="False"/>
+        <Button x:Name="removeButton" Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.ColumnSpan="2" Margin="570,324,0,0" IsEnabled="False" Click="removeButton_Click"/>
+        <Button x:Name="addContactButton" Content="Добавить" Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="40,324,0,0" VerticalAlignment="Top" Width="68" Click="addContactButton_Click"/>
 
     </Grid>
 </Window>

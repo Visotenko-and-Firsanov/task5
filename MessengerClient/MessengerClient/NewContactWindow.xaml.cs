@@ -10,19 +10,42 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MessengerClient.Presentation;
 
 namespace MessengerClient
 {
     /// <summary>
-    /// Логика взаимодействия для NewContactWindow.xaml
+    /// Interaction logic for NewContactWindow.xaml
     /// </summary>
-    public partial class NewContactWindow //: Page
+    public partial class NewContactWindow : Window, INewContactWindowView
     {
+
         public NewContactWindow()
         {
             InitializeComponent();
+        }
+
+        public event EventHandler AddContact;
+
+        public void ShowWindow()
+        {
+            ShowDialog();
+        }
+
+        public string GetName()
+        {
+            return textBox.Text;
+        }
+
+        void INewContactWindowView.Close()
+        {
+            Close();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            AddContact?.Invoke(this, EventArgs.Empty);
         }
     }
 }

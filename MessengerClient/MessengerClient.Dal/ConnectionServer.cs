@@ -4,18 +4,19 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
+using MessengerClient.Dal.MessengerService;
 using MessengerClient.Model;
 using MessengerClient.Presentation;
 using WcfContrib.Hosting;
+using Contact = MessengerClient.Model.Contact;
 
 
 namespace MessengerClient.Dal
 {
-    public class ConnectionServer //: IConnection
+    public class ConnectionServer : IConnection
     {
         private readonly string _address;
-        
-        //private MessengerService.MessengerServerServiceClient _client;
+        private MessengerService.MessengerServerServiceClient _client;
 
         public ConnectionServer()
         {
@@ -36,9 +37,10 @@ namespace MessengerClient.Dal
             return new Contact();
         }
 
-        /*public MyProfile LogIn(string name)
+        
+        public MyProfile LogIn(string name)
         {
-            Profile profile = _client
+            Profile profile = _client.UploadUserData(name);
 
             return TransformProfileView(profile);
         }
@@ -62,8 +64,6 @@ namespace MessengerClient.Dal
 
             return profile;
         }
-
-        */
 
         public void DeleteContact(string name)
         {
