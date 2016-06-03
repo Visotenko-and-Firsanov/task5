@@ -1,0 +1,15 @@
+C:\Programming\MessengerServer\MessengerHost\bin\Debug\MessengerHost.exe.config
+C:\Programming\MessengerServer\MessengerHost\bin\Debug\MessengerHost.exe
+C:\Programming\MessengerServer\MessengerHost\bin\Debug\MessengerHost.pdb
+C:\Programming\MessengerServer\MessengerHost\bin\Debug\Model.dll
+C:\Programming\MessengerServer\MessengerHost\bin\Debug\EntityFramework.dll
+C:\Programming\MessengerServer\MessengerHost\bin\Debug\Model.pdb
+C:\Programming\MessengerServer\MessengerHost\bin\Debug\EntityFramework.xml
+C:\Programming\MessengerServer\MessengerHost\obj\Debug\MessengerHost.csprojResolveAssemblyReference.cache
+C:\Programming\MessengerServer\MessengerHost\obj\Debug\MessengerHost.exe
+C:\Programming\MessengerServer\MessengerHost\obj\Debug\MessengerHost.pdb
+C:\Programming\MessengerServer\MessengerHost\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Programming\MessengerServer\MessengerHost\bin\Debug\MessengerServer.dll
+C:\Programming\MessengerServer\MessengerHost\bin\Debug\MessengerServer.pdb
+C:\Programming\MessengerServer\MessengerHost\bin\Debug\MessengerDal.dll
+C:\Programming\MessengerServer\MessengerHost\bin\Debug\MessengerDal.pdb

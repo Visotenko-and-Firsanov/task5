@@ -1,0 +1,5 @@
+C:\Programming\MessengerServer\Model\bin\Debug\Model.dll
+C:\Programming\MessengerServer\Model\bin\Debug\Model.pdb
+C:\Programming\MessengerServer\Model\obj\Debug\MessengerModel.csprojResolveAssemblyReference.cache
+C:\Programming\MessengerServer\Model\obj\Debug\Model.dll
+C:\Programming\MessengerServer\Model\obj\Debug\Model.pdb

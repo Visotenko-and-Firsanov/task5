@@ -1,0 +1,12 @@
+C:\Programming\MessengerServer\MessengerServer\bin\Debug\MessengerServer.dll
+C:\Programming\MessengerServer\MessengerServer\bin\Debug\MessengerServer.pdb
+C:\Programming\MessengerServer\MessengerServer\obj\Debug\MessengerServer.dll
+C:\Programming\MessengerServer\MessengerServer\obj\Debug\MessengerServer.pdb
+C:\Programming\MessengerServer\MessengerServer\bin\Debug\MessengerServer.dll.config
+C:\Programming\MessengerServer\MessengerServer\bin\Debug\Model.dll
+C:\Programming\MessengerServer\MessengerServer\bin\Debug\Model.pdb
+C:\Programming\MessengerServer\MessengerServer\obj\Debug\MessengerServer.csprojResolveAssemblyReference.cache
+C:\Programming\MessengerServer\MessengerServer\bin\Debug\MessengerDal.dll
+C:\Programming\MessengerServer\MessengerServer\bin\Debug\EntityFramework.dll
+C:\Programming\MessengerServer\MessengerServer\bin\Debug\MessengerDal.pdb
+C:\Programming\MessengerServer\MessengerServer\bin\Debug\EntityFramework.xml

@@ -1,36 +1,37 @@
-﻿using System.Collections.Generic;
-using System.ServiceModel;
+﻿using System.ServiceModel;
+using MessengerDal;
+using User = MessengerDal.User;
 
 namespace MessengerServer
 {
-    [ServiceContract (CallbackContract = typeof(IMessengerServerServiceCallback))]
+    [ServiceContract(CallbackContract = typeof(IMessengerServerServiceCallback))]
     public interface IMessengerServerService
     {
         [OperationContract]
-        Profile UploadUserData(string username);//log in
+        User UploadUserData(string username);//log in
 
-        [OperationContract]
-        List<string> RefreshUserData(string username);
+       // [OperationContract]
+       // List<string> RefreshUserData(string username);
 
         [OperationContract(IsOneWay = true)]
         void SendMessage(string usernameSenders, string usernameReceiver, string message);
 
         [OperationContract]
-        bool FindUser(string requiredUsername);
+        Friend FindUser(string requiredUsername);
 
-        [OperationContract]
-        bool UserStatusCheck(string requiredUsername);
+        //[OperationContract]
+       // bool UserStatusCheck(string requiredUsername);
 
         //[OperationContract(IsOneWay = true)]
         //void GetMessage(string usernameReceiver);
 
         [OperationContract]
-        void UploadingUserData(string username);
+        void UploadingUserData(User user);
     }
 
     [ServiceContract]
     public interface IMessengerServerServiceCallback
-    { 
+    {
         [OperationContract(IsOneWay = true)]
         void LoadMessage(string usernameReceiver, string message);
 

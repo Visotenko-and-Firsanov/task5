@@ -1,93 +1,70 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.ServiceModel;
-using MySql.Data.MySqlClient;
+using MessengerDal;
 
 namespace MessengerServer
 {
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single, ConcurrencyMode = ConcurrencyMode.Reentrant)]
     public class MessengerServerService : IMessengerServerService
     {
-        private readonly IStorage _dbBase;
+        private readonly Dictionary<string, IMessengerServerServiceCallback> _callbacks =
+            new Dictionary<string, IMessengerServerServiceCallback>();
+        private readonly Dictionary<string, string> _clientSession =
+           new Dictionary<string, string>();
 
-        public MessengerServerService()
+        private readonly Storage _storage = new Storage();
+
+        private void Disconnect(object sender, EventArgs e)
         {
-            using (var mySqlConnection = new MySqlConnection("server=localhost;port=3306;database=messageserver;uid=root;password=1234;"))
-            {
-                using (_dbBase = new StorageFromDbBase(mySqlConnection, false))
-                {
-                }
-                mySqlConnection.Open();
-                //try
-                //{
-                //    // DbConnection that is already opened
-                //    using (_dbBase = new StorageFromDbBase(mySqlConnection, false))
-                //    {
-
-
-                //        // Passing an existing transaction to the context
-                //        context.Database.UseTransaction(transaction);
-
-                //        // DbSet.AddRange
-                //        List<Car> cars = new List<Car>();
-
-                //        cars.Add(new Car { Manufacturer = "Nissan", Model = "370Z", Year = 2012 });
-                //        cars.Add(new Car { Manufacturer = "Ford", Model = "Mustang", Year = 2013 });
-                //        cars.Add(new Car { Manufacturer = "Chevrolet", Model = "Camaro", Year = 2012 });
-                //        cars.Add(new Car { Manufacturer = "Dodge", Model = "Charger", Year = 2013 });
-
-                //        context.Cars.AddRange(cars);
-
-                //        context.SaveChanges();
-                //    }
-
-                //}
-                _dbBase.Save(new Profile{Name = "Roma", Online = true, ProifileId = 1});
-                var user = _dbBase.Load("Roma");
-
-            }
+            var userName = _clientSession[((IClientChannel) sender).SessionId];   
+            Console.WriteLine("Client {0} is disconnect", userName);
+            _callbacks[userName] = null;
+            _clientSession[userName] = null;
+            CallAllNotificationUsers(_storage.UpdateStatus(userName, false), userName, false);
+            
         }
 
-        public Profile UploadUserData(string username)
+        public User UploadUserData(string username)
         {
-            var result = _dbBase.LoadOneProfile(username);
-            if (result != null)
-                return result;
-            UserRegistration(username);
-            return new Profile();
-        }
-
-        private void UserRegistration(string username)
-        {
-           // var prof  = new Profile {Name = username, Online = true, Contacts = null};
-            //_dbBase.Save(prof);
-        }
-
-        public List<string> RefreshUserData(string username)
-        {
-			return  _dbBase.GetOnlineMembers(username);
+            var user = _storage.Load(username);
+            _clientSession[OperationContext.Current.Channel.SessionId] = username;
+            _callbacks[user.Name] = OperationContext.Current.GetCallbackChannel<IMessengerServerServiceCallback>();
+            OperationContext.Current.Channel.Faulted += Disconnect;
+            Console.WriteLine("Client {0} is connect", user.Name);
+            CallAllNotificationUsers(_storage.UpdateStatus(user.Name, true), user.Name, true);
+           // CallAllNotificationUsers(_storage.UpdateStatus(username, true), user.Name, true);
+            return user;
         }
 
         public void SendMessage(string usernameSenders, string usernameReceiver, string message)
         {
-			if(_dbBase.CheckStatus(usernameReceiver))
-                OperationContext.Current.GetCallbackChannel<IMessengerServerServiceCallback>().LoadMessage(usernameReceiver, message);
-            _dbBase.SendMessage(usernameSenders, usernameReceiver, message);
+            if (_storage.CheckStatus(usernameReceiver))
+                _callbacks[usernameReceiver].LoadMessage(usernameSenders, message);
+            else
+                _storage.SendMessage(usernameSenders, usernameReceiver, message);
         }
 
-        public bool FindUser(string requiredUsername)
+        public Friend FindUser(string requiredUsername)
         {
-            return _dbBase.LoadOneProfile(requiredUsername) != null;
+            return _storage.FindUser(requiredUsername);
         }
 
-        public bool UserStatusCheck(string requiredUsername)
+        public void UploadingUserData(User user)
         {
-            return _dbBase.CheckStatus(requiredUsername);
+            CallAllNotificationUsers(_storage.UpdateStatus(user.Name, false), user.Name, false);
+            _callbacks[user.Name] = null;
+            _storage.Save(user);
         }
 
-        public void UploadingUserData(string username)
+        private void CallAllNotificationUsers(List<string> nameList, string nameReciver, bool status)
         {
-            throw new NotImplementedException();
+
+            foreach (var name in nameList)
+            {
+                if (_callbacks.ContainsKey(name) && _callbacks[name] != null)
+                    _callbacks[name].ContactsStatusUpdate(nameReciver, status);
+            }
         }
     }
-}
+} 
