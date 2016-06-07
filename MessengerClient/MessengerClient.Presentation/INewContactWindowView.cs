@@ -10,6 +10,7 @@ namespace MessengerClient.Presentation
     {
         event EventHandler AddContact;
         string GetName();
+        void ShowMessage(string message);
         void ShowWindow();
         void Close();
     }

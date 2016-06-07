@@ -4,42 +4,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
 using MessengerClient.Presentation;
 
 namespace MessengerClient
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    ///     Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window, IMainWindowView
+    public partial class MainWindow : IMainWindowView
     {
         private NewContactWindow _newContactWindow;
 
-        public Dictionary<string, bool> OnlineContactsList { get; set; }
-        public string Message { get; set; }
-        public string ActiveContact { get; set; }
+        public List<KeyValuePair<string, string>> ConactsList;
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Send(object sender, RoutedEventArgs e)
-        {
-            Message = messageField.Text;
+        public string NewContactName { get; set; }
 
-            messageField.Text = "";
-
-            SendMessage?.Invoke(this, EventArgs.Empty);
-
-            messegeHistory.Text = ContaktsMessageHistory[(string)listView.SelectedItem];
-        }
-
-        public List<KeyValuePair<string, string>> ConactsList;
+        public List<string> OnlineContactsList { get; set; }
+        public string Message { get; set; }
+        public string ActiveContact { get; set; }
 
         public Dictionary<string, string> ContaktsMessageHistory { get; set; }
-        public string NewContactName { get; set; }
+
+
+        public void UpdateMessageScreen()
+        {
+            messegeHistory.Text = ContaktsMessageHistory[(string)listView.SelectedItem];
+        }
 
         public void UpdateContacts(IEnumerable contaktsList)
         {
@@ -53,8 +48,6 @@ namespace MessengerClient
                     continue;
 
                 listView.Items.Add(contact);
-
-
             }
         }
 
@@ -70,11 +63,23 @@ namespace MessengerClient
         public event EventHandler AddNewContakt;
         public event EventHandler SaveProfile;
 
-        private void Messenger_Unload(object sender, EventArgs eventArgs)
+        private void Send(object sender, RoutedEventArgs e)
         {
-            SaveProfile?.Invoke(this, EventArgs.Empty);
+            Message = messageField.Text;
+
+            messageField.Text = "";
+
+            if (SendMessage != null) SendMessage.Invoke(this, EventArgs.Empty);
+
+            messegeHistory.Text = ContaktsMessageHistory[(string)listView.SelectedItem];
         }
 
+        private void Messenger_Unload(object sender, EventArgs eventArgs)
+        {
+            if (SaveProfile != null) SaveProfile.Invoke(this, EventArgs.Empty);
+        }
+
+        //Вынести из окна
         private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (listView.SelectedIndex == -1)
@@ -90,7 +95,7 @@ namespace MessengerClient
 
             removeButton.IsEnabled = true;
 
-            if (ContaktsMessageHistory.Count > 1)
+            if (ContaktsMessageHistory.Count >= 1)
                 messegeHistory.Text = ContaktsMessageHistory[(string)listView.SelectedItem];
         }
 
@@ -98,7 +103,7 @@ namespace MessengerClient
         {
             listView.Items.RemoveAt(listView.SelectedIndex);
 
-            DeleteContact?.Invoke(this, EventArgs.Empty);
+            if (DeleteContact != null) DeleteContact.Invoke(this, EventArgs.Empty);
         }
 
         private void addContactButton_Click(object sender, RoutedEventArgs e)
@@ -109,8 +114,7 @@ namespace MessengerClient
 
             listView.SelectedIndex = listView.Items.Count;
 
-            AddNewContakt?.Invoke(this, EventArgs.Empty);
-
+            if (AddNewContakt != null) AddNewContakt.Invoke(this, EventArgs.Empty);
         }
     }
 }

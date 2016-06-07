@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,16 +10,19 @@ namespace MessengerClient.Presentation
 {
     public interface IConnection
     {
-        string LoadMessage(string name, string message);
+        void LoadMessage(string name, string message);
 
-        void SendMessage(string name, string message);
+        void SendMessage(string myName, string receverName, string message);
 
+        void Save(MyProfile profile);
         Contact AddContact(string name);
 
         MyProfile LogIn(string name);
 
-        void DeleteContact(string name);
+        KeyValuePair<string, string> Messages { get; set; }
+        KeyValuePair<string, bool> StatusUpdate { get; set; }
 
-        List<KeyValuePair<string, List<string>>> Messages { get; set; }
+        event PropertyChangedEventHandler MessangePropertyChanged;
+        event PropertyChangedEventHandler StatusPropertyChanged;
     }
 }

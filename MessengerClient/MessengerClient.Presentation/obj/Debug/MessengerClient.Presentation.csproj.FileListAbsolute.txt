@@ -1,0 +1,7 @@
+F:\task\task5\task5\MessengerClient\MessengerClient.Presentation\bin\Debug\MessengerClient.Presentation.dll
+F:\task\task5\task5\MessengerClient\MessengerClient.Presentation\bin\Debug\MessengerClient.Presentation.pdb
+F:\task\task5\task5\MessengerClient\MessengerClient.Presentation\bin\Debug\MessengerClient.Model.dll
+F:\task\task5\task5\MessengerClient\MessengerClient.Presentation\bin\Debug\MessengerClient.Model.pdb
+F:\task\task5\task5\MessengerClient\MessengerClient.Presentation\obj\Debug\MessengerClient.Presentation.csprojResolveAssemblyReference.cache
+F:\task\task5\task5\MessengerClient\MessengerClient.Presentation\obj\Debug\MessengerClient.Presentation.dll
+F:\task\task5\task5\MessengerClient\MessengerClient.Presentation\obj\Debug\MessengerClient.Presentation.pdb

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerClient.UI", "MessengerClient\MessengerClient.UI.csproj", "{7448929E-DD2A-40B6-86F5-46F9A58A1B2C}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerClient.Dal", "MessengerClient.Dal\MessengerClient.Dal.csproj", "{35E6A7EB-063A-4A65-AA75-473E27DBA8EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerClient.Model", "MessengerClient.Model\MessengerClient.Model.csproj", "{D37E6C38-A658-4D39-96EC-D3EDD56300E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerClient.Presentation.Tests", "MessengerClient.Presentation.Tests\MessengerClient.Presentation.Tests.csproj", "{F6C66C98-8B7C-4641-8B8F-46F131115DCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerClient.Model.Tests", "MessengerClient.Model.Tests\MessengerClient.Model.Tests.csproj", "{C77E6175-7A15-4515-AB3B-F92CEDE4504A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{D37E6C38-A658-4D39-96EC-D3EDD56300E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D37E6C38-A658-4D39-96EC-D3EDD56300E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D37E6C38-A658-4D39-96EC-D3EDD56300E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C66C98-8B7C-4641-8B8F-46F131115DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C66C98-8B7C-4641-8B8F-46F131115DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C66C98-8B7C-4641-8B8F-46F131115DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C66C98-8B7C-4641-8B8F-46F131115DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C77E6175-7A15-4515-AB3B-F92CEDE4504A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C77E6175-7A15-4515-AB3B-F92CEDE4504A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C77E6175-7A15-4515-AB3B-F92CEDE4504A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C77E6175-7A15-4515-AB3B-F92CEDE4504A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

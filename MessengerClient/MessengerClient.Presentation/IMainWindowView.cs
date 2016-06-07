@@ -7,9 +7,11 @@ namespace MessengerClient.Presentation
     public interface IMainWindowView
     {
         Dictionary<string, string> ContaktsMessageHistory { get; set; }
-        Dictionary<string, bool> OnlineContactsList { get; set; }
+        List<string> OnlineContactsList { get; set; }
         string Message { get; set; }
         string ActiveContact { get; set; }
+
+        void UpdateMessageScreen();
         void UpdateContacts(IEnumerable contaktsList);
 
         INewContactWindowView CreateContactWindow();

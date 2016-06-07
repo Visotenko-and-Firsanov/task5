@@ -30,7 +30,7 @@ namespace MessengerClient.Presentation
 
             newMessage.Append(message);
 
-            profile.MyContacts[i].MessageHistory += newMessage.ToString();
+            profile.MyContacts[i].MessageHistory += ReformatMessage.Reformat(profile.MyName, message);
 
             return profile;
         }

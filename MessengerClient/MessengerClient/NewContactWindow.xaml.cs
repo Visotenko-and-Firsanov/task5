@@ -1,16 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using MessengerClient.Presentation;
 
 namespace MessengerClient
@@ -38,6 +27,11 @@ namespace MessengerClient
             return textBox.Text;
         }
 
+        public void ShowMessage(string message)
+        {
+            MessageBox.Show(message);
+        }
+
         void INewContactWindowView.Close()
         {
             Close();
@@ -45,7 +39,7 @@ namespace MessengerClient
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            AddContact?.Invoke(this, EventArgs.Empty);
+            if (AddContact != null) AddContact.Invoke(this, EventArgs.Empty);
         }
     }
 }

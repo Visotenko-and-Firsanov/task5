@@ -49,7 +49,7 @@
     <Compile Include="ConnectionServer.cs" />
     <Compile Include="LocalStorage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\MessengerService\Reference.cs">
+    <Compile Include="Service References\MessengerServerReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -68,43 +68,43 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Service References\MessengerService\item.xsd">
+    <None Include="Service References\MessengerServerReference\item.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\MessengerService\item1.xsd">
+    <None Include="Service References\MessengerServerReference\item1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\MessengerService\item2.xsd">
+    <None Include="Service References\MessengerServerReference\item2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\MessengerService\item3.xsd">
+    <None Include="Service References\MessengerServerReference\item3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\MessengerService\MessengerClient.Dal.MessengerService.Friend.datasource">
+    <None Include="Service References\MessengerServerReference\MessengerClient.Dal.MessengerServerReference.Friend.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\MessengerService\MessengerClient.Dal.MessengerService.User.datasource">
+    <None Include="Service References\MessengerServerReference\MessengerClient.Dal.MessengerServerReference.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\MessengerService\MessengerServerService.wsdl" />
+    <None Include="Service References\MessengerServerReference\MessengerServerService.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\MessengerService\" />
+    <WCFMetadataStorage Include="Service References\MessengerServerReference\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\MessengerService\item.disco" />
+    <None Include="Service References\MessengerServerReference\item.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\MessengerService\configuration91.svcinfo" />
+    <None Include="Service References\MessengerServerReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\MessengerService\configuration.svcinfo" />
+    <None Include="Service References\MessengerServerReference\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\MessengerService\Reference.svcmap">
+    <None Include="Service References\MessengerServerReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
