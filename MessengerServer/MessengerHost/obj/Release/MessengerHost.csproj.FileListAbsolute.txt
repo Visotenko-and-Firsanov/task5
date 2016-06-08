@@ -1,0 +1,57 @@
+C:\Programming\MessengerServer\MessengerHost\bin\Release\MessengerHost.exe.config
+C:\Programming\MessengerServer\MessengerHost\bin\Release\MessengerHost.exe
+C:\Programming\MessengerServer\MessengerHost\bin\Release\MessengerHost.pdb
+C:\Programming\MessengerServer\MessengerHost\bin\Release\log4net.dll
+C:\Programming\MessengerServer\MessengerHost\bin\Release\MessengerServer.dll
+C:\Programming\MessengerServer\MessengerHost\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Programming\MessengerServer\MessengerHost\bin\Release\nunit.framework.dll
+C:\Programming\MessengerServer\MessengerHost\bin\Release\MessengerDal.dll
+C:\Programming\MessengerServer\MessengerHost\bin\Release\EntityFramework.dll
+C:\Programming\MessengerServer\MessengerHost\bin\Release\Model.dll
+C:\Programming\MessengerServer\MessengerHost\bin\Release\MessengerServer.pdb
+C:\Programming\MessengerServer\MessengerHost\bin\Release\log4net.xml
+C:\Programming\MessengerServer\MessengerHost\bin\Release\MessengerDal.pdb
+C:\Programming\MessengerServer\MessengerHost\bin\Release\EntityFramework.xml
+C:\Programming\MessengerServer\MessengerHost\bin\Release\Model.pdb
+C:\Programming\MessengerServer\MessengerHost\obj\Release\MessengerHost.csprojResolveAssemblyReference.cache
+C:\Programming\MessengerServer\MessengerHost\obj\Release\MessengerHost.exe
+C:\Programming\MessengerServer\MessengerHost\obj\Release\MessengerHost.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\MessengerHost.exe.config
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\obj\Release\MessengerHost.exe
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\obj\Release\MessengerHost.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\MessengerHost.exe
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\MessengerHost.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\log4net.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\MessengerDal.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\MessengerServer.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\MySql.Data.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\Model.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\EntityFramework.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\MessengerDal.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\MessengerServer.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\log4net.xml
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\Model.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\bin\Release\EntityFramework.xml
+C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\obj\Release\MessengerHost.csprojResolveAssemblyReference.cache
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\MessengerHost.exe.config
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\obj\Release\MessengerHost.exe
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\obj\Release\MessengerHost.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\MessengerHost.exe
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\MessengerHost.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\log4net.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\MessengerDal.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\MessengerServer.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\MySql.Data.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\MySql.Data.Entity.EF6.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\Model.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\EntityFramework.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\MessengerDal.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\MessengerServer.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\log4net.xml
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\Model.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\bin\Release\EntityFramework.xml
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerHost\obj\Release\MessengerHost.csprojResolveAssemblyReference.cache
+E:\task5\task5\MessengerServer\MessengerHost\bin\Release\MessengerHost.exe.config
+E:\task5\task5\MessengerServer\MessengerHost\obj\Release\MessengerHost.exe
+E:\task5\task5\MessengerServer\MessengerHost\obj\Release\MessengerHost.pdb

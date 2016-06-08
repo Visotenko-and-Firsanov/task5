@@ -1,0 +1,58 @@
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\MessengerServerTests.dll
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\MessengerServerTests.pdb
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\MessengerDal.dll
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\MessengerServer.dll
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\Moq.dll
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\nunit.framework.dll
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\EntityFramework.dll
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\log4net.dll
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\Model.dll
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\MessengerDal.pdb
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\MessengerServer.pdb
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\Moq.xml
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\EntityFramework.xml
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\log4net.xml
+C:\Programming\MessengerServer\MessengerServerTests\bin\Release\Model.pdb
+C:\Programming\MessengerServer\MessengerServerTests\obj\Release\MessengerServerTests.csprojResolveAssemblyReference.cache
+C:\Programming\MessengerServer\MessengerServerTests\obj\Release\MessengerServerTests.dll
+C:\Programming\MessengerServer\MessengerServerTests\obj\Release\MessengerServerTests.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\MessengerServerTests.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\MessengerServerTests.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\MessengerDal.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\MessengerServer.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\Moq.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\nunit.framework.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\log4net.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\Model.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\MySql.Data.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\EntityFramework.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\MessengerDal.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\MessengerServer.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\Moq.xml
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\log4net.xml
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\Model.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\bin\Release\EntityFramework.xml
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\obj\Release\MessengerServerTests.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\obj\Release\MessengerServerTests.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServerTests\obj\Release\MessengerServerTests.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\MessengerServerTests.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\MessengerServerTests.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\MessengerDal.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\MessengerServer.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\Moq.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\nunit.framework.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\log4net.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\Model.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\MySql.Data.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\EntityFramework.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\MySql.Data.Entity.EF6.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\MessengerDal.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\MessengerServer.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\Moq.xml
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\log4net.xml
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\Model.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\bin\Release\EntityFramework.xml
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\obj\Release\MessengerServerTests.csprojResolveAssemblyReference.cache
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\obj\Release\MessengerServerTests.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServerTests\obj\Release\MessengerServerTests.pdb

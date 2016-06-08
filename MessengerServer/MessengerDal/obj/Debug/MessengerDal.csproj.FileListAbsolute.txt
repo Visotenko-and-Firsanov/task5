@@ -2,13 +2,13 @@ C:\Programming\MessengerServer\MessengerDal\bin\Debug\MessengerDal.dll.config
 C:\Programming\MessengerServer\MessengerDal\bin\Debug\MessengerDal.dll
 C:\Programming\MessengerServer\MessengerDal\bin\Debug\MessengerDal.pdb
 C:\Programming\MessengerServer\MessengerDal\bin\Debug\EntityFramework.dll
-C:\Programming\MessengerServer\MessengerDal\bin\Debug\EntityFramework.SqlServer.dll
 C:\Programming\MessengerServer\MessengerDal\bin\Debug\Model.dll
 C:\Programming\MessengerServer\MessengerDal\bin\Debug\MySql.Data.dll
 C:\Programming\MessengerServer\MessengerDal\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Programming\MessengerServer\MessengerDal\bin\Debug\Model.pdb
 C:\Programming\MessengerServer\MessengerDal\bin\Debug\EntityFramework.xml
-C:\Programming\MessengerServer\MessengerDal\bin\Debug\EntityFramework.SqlServer.xml
 C:\Programming\MessengerServer\MessengerDal\obj\Debug\MessengerDal.csprojResolveAssemblyReference.cache
 C:\Programming\MessengerServer\MessengerDal\obj\Debug\MessengerDal.dll
 C:\Programming\MessengerServer\MessengerDal\obj\Debug\MessengerDal.pdb
+C:\Programming\MessengerServer\MessengerDal\bin\Debug\log4net.dll
+C:\Programming\MessengerServer\MessengerDal\bin\Debug\log4net.xml

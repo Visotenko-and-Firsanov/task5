@@ -1,0 +1,15 @@
+C:\Programming\MessengerServer\Model\bin\Release\Model.dll
+C:\Programming\MessengerServer\Model\bin\Release\Model.pdb
+C:\Programming\MessengerServer\Model\obj\Release\MessengerModel.csprojResolveAssemblyReference.cache
+C:\Programming\MessengerServer\Model\obj\Release\Model.dll
+C:\Programming\MessengerServer\Model\obj\Release\Model.pdb
+C:\Users\Андрей\Desktop\MessengerServer\Model\bin\Release\Model.dll
+C:\Users\Андрей\Desktop\MessengerServer\Model\bin\Release\Model.pdb
+C:\Users\Андрей\Desktop\MessengerServer\Model\obj\Release\MessengerModel.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\Desktop\MessengerServer\Model\obj\Release\Model.dll
+C:\Users\Андрей\Desktop\MessengerServer\Model\obj\Release\Model.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\Model\bin\Release\Model.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\Model\bin\Release\Model.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\Model\obj\Release\MessengerModel.csprojResolveAssemblyReference.cache
+E:\Учёба\То-что нужно закомитить\MessengerServer\Model\obj\Release\Model.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\Model\obj\Release\Model.pdb

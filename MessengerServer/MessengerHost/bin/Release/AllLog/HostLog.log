@@ -1,0 +1,190 @@
+2016-05-30 15:46:41,125 [1] ERROR MessengerHost.Program Сервер не был запущен из-за возникшей ошибки
+System.ServiceModel.AddressAccessDeniedException: Протоколу HTTP не удалось зарегистрировать URL-адрес http://+:8080/. Текущий процесс не имеет прав доступа к этому пространству имен (подробнее см. на веб-странице http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Отказано в доступе
+   в System.Net.HttpListener.AddAllPrefixes()
+   в System.Net.HttpListener.Start()
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   в System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   в System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   в System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.HttpChannelListener`1.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в MessengerHost.Program.Main(String[] args) в c:\Programming\MessengerServer\MessengerHost\Program.cs:строка 25
+2016-05-30 15:49:19,582 [5] INFO  MessengerServer.MessengerServerService Client Roma is connect
+2016-05-30 15:49:29,989 [6] INFO  MessengerServer.MessengerServerService Client Alex is connect
+2016-05-30 15:49:31,989 [6] INFO  MessengerServer.MessengerServerService Client Alex is disconnect
+2016-05-30 15:49:33,004 [6] INFO  MessengerServer.MessengerServerService Client Roma is disconnect
+2016-05-30 19:31:00,892 [16] INFO  MessengerServer.MessengerServerService Client Roma is connect
+2016-05-30 19:31:27,962 [14] INFO  MessengerServer.MessengerServerService Client Roma is disconnect
+2016-05-30 19:31:51,820 [12] INFO  MessengerServer.MessengerServerService Client Romualdo is connect
+2016-05-30 19:31:57,185 [12] INFO  MessengerServer.MessengerServerService Client Romanian is connect
+2016-05-30 19:32:04,281 [12] INFO  MessengerServer.MessengerServerService Client Romatoza is connect
+2016-05-30 19:32:13,203 [12] INFO  MessengerServer.MessengerServerService Client Romeus is connect
+2016-05-30 19:32:27,734 [12] INFO  MessengerServer.MessengerServerService Client Tina is connect
+2016-05-30 19:32:47,979 [13] INFO  MessengerServer.MessengerServerService Client Romualdo is disconnect
+2016-05-30 19:32:49,140 [13] INFO  MessengerServer.MessengerServerService Client Romanian is disconnect
+2016-05-30 19:32:50,370 [8] INFO  MessengerServer.MessengerServerService Client Romatoza is disconnect
+2016-05-30 19:32:51,647 [8] INFO  MessengerServer.MessengerServerService Client Romeus is disconnect
+2016-05-30 19:32:53,320 [8] INFO  MessengerServer.MessengerServerService Client Tina is disconnect
+2016-06-01 09:12:38,678 [15] INFO  MessengerServer.MessengerServerService Client Andrey is connect
+2016-06-01 09:12:42,454 [15] INFO  MessengerServer.MessengerServerService Client Andrey is disconnect
+2016-06-03 10:03:00,977 [1] ERROR MessengerHost.Host Сервер не был запущен из-за возникшей ошибки
+System.ServiceModel.AddressAccessDeniedException: Протоколу HTTP не удалось зарегистрировать URL-адрес http://+:8080/. Текущий процесс не имеет прав доступа к этому пространству имен (подробнее см. на веб-странице http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Отказано в доступе
+   в System.Net.HttpListener.AddAllPrefixes()
+   в System.Net.HttpListener.Start()
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   в System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   в System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   в System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.HttpChannelListener`1.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в MessengerHost.Host.Main(String[] args) в C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\Host.cs:строка 25
+2016-06-03 10:07:09,057 [8] INFO  MessengerServer.MessengerServerService Client Andrey is connect
+2016-06-03 10:07:48,912 [4] INFO  MessengerServer.MessengerServerService Client Andrey is disconnect
+2016-06-03 10:07:56,858 [8] INFO  MessengerServer.MessengerServerService Client Andrey is connect
+2016-06-03 10:08:47,173 [8] ERROR MessengerDal.Storage Ошибка при попытке проверить статус контакта
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 301
+2016-06-03 10:09:02,011 [5] INFO  MessengerServer.MessengerServerService Client vova is connect
+2016-06-03 10:09:13,157 [3] ERROR MessengerDal.Storage Ошибка при попытке проверить статус контакта
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 301
+2016-06-03 10:09:13,157 [3] ERROR MessengerServer.MessengerServerService Невозможно загрузить данные
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 313
+   в MessengerDal.Storage.<Load>b__11_1(Int64 idContact) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 145
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в MessengerDal.Storage.Load(String userName) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 116
+   в MessengerServer.MessengerServerService.UploadUserData(String username) в C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\MessengerServerService.cs:строка 46
+2016-06-03 10:09:24,645 [6] INFO  MessengerServer.MessengerServerService Client vova is disconnect
+2016-06-03 10:09:33,692 [10] INFO  MessengerServer.MessengerServerService Client Vova is connect
+2016-06-03 10:11:04,103 [13] ERROR MessengerDal.Storage Ошибка при попытке проверить статус контакта
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 301
+2016-06-03 10:11:04,103 [13] ERROR MessengerServer.MessengerServerService Невозможно загрузить данные
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 313
+   в MessengerDal.Storage.<Load>b__11_1(Int64 idContact) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 145
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в MessengerDal.Storage.Load(String userName) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 116
+   в MessengerServer.MessengerServerService.UploadUserData(String username) в C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\MessengerServerService.cs:строка 46
+2016-06-03 10:11:13,113 [10] ERROR MessengerDal.Storage Ошибка при попытке проверить статус контакта
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 301
+2016-06-03 10:11:13,113 [10] ERROR MessengerServer.MessengerServerService Невозможно загрузить данные
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 313
+   в MessengerDal.Storage.<Load>b__11_1(Int64 idContact) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 145
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в MessengerDal.Storage.Load(String userName) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 116
+   в MessengerServer.MessengerServerService.UploadUserData(String username) в C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\MessengerServerService.cs:строка 46
+2016-06-03 10:12:33,950 [8] ERROR MessengerDal.Storage Ошибка при попытке проверить статус контакта
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 301
+2016-06-03 10:21:16,317 [8] INFO  MessengerServer.MessengerServerService Client Vova is connect
+2016-06-03 10:21:22,676 [6] ERROR MessengerDal.Storage Ошибка при попытке проверить статус контакта
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 301
+2016-06-03 10:21:22,676 [6] ERROR MessengerServer.MessengerServerService Невозможно загрузить данные
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 313
+   в MessengerDal.Storage.<Load>b__11_1(Int64 idContact) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 145
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в MessengerDal.Storage.Load(String userName) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 116
+   в MessengerServer.MessengerServerService.UploadUserData(String username) в C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\MessengerServerService.cs:строка 46
+2016-06-03 10:21:56,681 [3] ERROR MessengerDal.Storage Ошибка при попытке проверить статус контакта
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 301
+2016-06-03 10:21:56,681 [3] ERROR MessengerServer.MessengerServerService Невозможно загрузить данные
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 313
+   в MessengerDal.Storage.<Load>b__11_1(Int64 idContact) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 145
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в MessengerDal.Storage.Load(String userName) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 116
+   в MessengerServer.MessengerServerService.UploadUserData(String username) в C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\MessengerServerService.cs:строка 46
+2016-06-03 10:22:12,834 [11] INFO  MessengerServer.MessengerServerService Client Petiy is connect
+2016-06-03 10:23:18,730 [4] INFO  MessengerServer.MessengerServerService Client Vova is disconnect
+2016-06-03 10:44:46,576 [1] ERROR MessengerHost.Host Сервер не был запущен из-за возникшей ошибки
+System.ServiceModel.AddressAccessDeniedException: Протоколу HTTP не удалось зарегистрировать URL-адрес http://+:8080/. Текущий процесс не имеет прав доступа к этому пространству имен (подробнее см. на веб-странице http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Отказано в доступе
+   в System.Net.HttpListener.AddAllPrefixes()
+   в System.Net.HttpListener.Start()
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   в System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   в System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   в System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.HttpChannelListener`1.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в MessengerHost.Host.Main(String[] args) в C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\Host.cs:строка 25
+2016-06-03 10:45:05,373 [1] ERROR MessengerHost.Host Сервер не был запущен из-за возникшей ошибки
+System.ServiceModel.AddressAccessDeniedException: Протоколу HTTP не удалось зарегистрировать URL-адрес http://+:8080/. Текущий процесс не имеет прав доступа к этому пространству имен (подробнее см. на веб-странице http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Отказано в доступе
+   в System.Net.HttpListener.AddAllPrefixes()
+   в System.Net.HttpListener.Start()
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   в System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   в System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   в System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.HttpChannelListener`1.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в MessengerHost.Host.Main(String[] args) в C:\Users\Андрей\Desktop\MessengerServer\MessengerHost\Host.cs:строка 25
+2016-06-03 14:52:38,270 [3] INFO  MessengerServer.MessengerServerService Client Andrey is connect
+2016-06-03 14:52:43,819 [3] INFO  MessengerServer.MessengerServerService Client Andrey is disconnect
+2016-06-03 15:31:03,473 [8] INFO  MessengerServer.MessengerServerService Client Andrey is connect
+2016-06-03 15:31:15,144 [4] INFO  MessengerServer.MessengerServerService Client Vova is connect
+2016-06-03 15:32:56,286 [11] ERROR MessengerDal.Storage Ошибка при попытке проверить статус контакта
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 301
+2016-06-03 15:32:56,289 [11] ERROR MessengerServer.MessengerServerService Невозможно загрузить данные
+System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в MessengerDal.Storage.CheckStatus(Int64 id) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 313
+   в MessengerDal.Storage.<Load>b__11_1(Int64 idContact) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 145
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в MessengerDal.Storage.Load(String userName) в C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\Storage.cs:строка 116
+   в MessengerServer.MessengerServerService.UploadUserData(String username) в C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\MessengerServerService.cs:строка 46
+2016-06-03 15:33:11,614 [3] INFO  MessengerServer.MessengerServerService Client Andrey is disconnect
+2016-06-07 14:03:08,110 [9] INFO  MessengerServer.MessengerServerService Client Andrew is connect
+2016-06-07 14:03:42,677 [6] INFO  MessengerServer.MessengerServerService Client VLadimir is connect
+2016-06-07 14:05:12,361 [3] INFO  MessengerServer.MessengerServerService Client Думов is connect
+2016-06-07 14:07:36,506 [11] INFO  MessengerServer.MessengerServerService Client Andrew is disconnect
+2016-06-07 14:07:38,339 [6] INFO  MessengerServer.MessengerServerService Client Думов is disconnect
+2016-06-07 14:07:40,525 [11] INFO  MessengerServer.MessengerServerService Client VLadimir is disconnect
+2016-06-08 13:02:04,111 [8] INFO  MessengerServer.MessengerServerService Client Андрей is connect
+2016-06-08 13:02:18,491 [6] INFO  MessengerServer.MessengerServerService Client Вова is connect
+2016-06-08 13:03:06,628 [3] INFO  MessengerServer.MessengerServerService Client * is connect
+2016-06-08 13:03:26,755 [3] INFO  MessengerServer.MessengerServerService Client * is disconnect
+2016-06-08 13:03:38,532 [11] INFO  MessengerServer.MessengerServerService Client Вова is disconnect
+2016-06-08 13:03:54,426 [3] INFO  MessengerServer.MessengerServerService Client Андрей is disconnect

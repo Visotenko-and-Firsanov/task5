@@ -1,0 +1,96 @@
+2016-05-29 22:11:07,018 [10] ERROR MessengerHost.Program Сервер не был запущен из-за возникшей ошибки
+System.ServiceModel.AddressAccessDeniedException: Протоколу HTTP не удалось зарегистрировать URL-адрес http://+:8080/. Текущий процесс не имеет прав доступа к этому пространству имен (подробнее см. на веб-странице http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Отказано в доступе
+   в System.Net.HttpListener.AddAllPrefixes()
+   в System.Net.HttpListener.Start()
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   в System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   в System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   в System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.HttpChannelListener`1.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open()
+   в MessengerHost.Program.Main(String[] args) в c:\Programming\MessengerServer\MessengerHost\Program.cs:строка 25
+2016-05-29 22:14:45,432 [11] INFO  MessengerServer.MessengerServerService Client Roma is connect
+2016-05-29 22:15:09,542 [15] INFO  MessengerServer.MessengerServerService Client Roma is disconnect
+2016-05-29 22:15:14,402 [13] INFO  MessengerServer.MessengerServerService Client Tina is connect
+2016-05-29 22:15:19,216 [15] INFO  MessengerServer.MessengerServerService Client Roma is connect
+2016-05-29 22:15:36,662 [15] INFO  MessengerServer.MessengerServerService Client Roma is disconnect
+2016-05-29 22:15:45,893 [15] INFO  MessengerServer.MessengerServerService Client Tina is disconnect
+2016-06-03 10:02:27,205 [1] ERROR MessengerHost.Program Сервер не был запущен из-за возникшей ошибки
+System.ServiceModel.AddressAccessDeniedException: Протоколу HTTP не удалось зарегистрировать URL-адрес http://+:8080/. Текущий процесс не имеет прав доступа к этому пространству имен (подробнее см. на веб-странице http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Отказано в доступе
+   в System.Net.HttpListener.AddAllPrefixes()
+   в System.Net.HttpListener.Start()
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   в System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   в System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   в System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.HttpChannelListener`1.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open()
+   в MessengerHost.Program.Main(String[] args) в c:\Programming\MessengerServer\MessengerHost\Program.cs:строка 25
+2016-06-03 10:02:38,709 [1] ERROR MessengerHost.Program Сервер не был запущен из-за возникшей ошибки
+System.ServiceModel.AddressAccessDeniedException: Протоколу HTTP не удалось зарегистрировать URL-адрес http://+:8080/. Текущий процесс не имеет прав доступа к этому пространству имен (подробнее см. на веб-странице http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Отказано в доступе
+   в System.Net.HttpListener.AddAllPrefixes()
+   в System.Net.HttpListener.Start()
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   в System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   в System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   в System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.HttpChannelListener`1.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open()
+   в MessengerHost.Program.Main(String[] args) в c:\Programming\MessengerServer\MessengerHost\Program.cs:строка 25
+2016-06-03 10:13:34,230 [1] ERROR MessengerHost.Program Сервер не был запущен из-за возникшей ошибки
+System.ServiceModel.AddressAccessDeniedException: Протоколу HTTP не удалось зарегистрировать URL-адрес http://+:8080/. Текущий процесс не имеет прав доступа к этому пространству имен (подробнее см. на веб-странице http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Отказано в доступе
+   в System.Net.HttpListener.AddAllPrefixes()
+   в System.Net.HttpListener.Start()
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   в System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   в System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   в System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.HttpChannelListener`1.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open()
+   в MessengerHost.Program.Main(String[] args) в c:\Programming\MessengerServer\MessengerHost\Program.cs:строка 25
+2016-06-03 10:13:52,431 [1] ERROR MessengerHost.Program Сервер не был запущен из-за возникшей ошибки
+System.ServiceModel.AddressAccessDeniedException: Протоколу HTTP не удалось зарегистрировать URL-адрес http://+:8080/. Текущий процесс не имеет прав доступа к этому пространству имен (подробнее см. на веб-странице http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Отказано в доступе
+   в System.Net.HttpListener.AddAllPrefixes()
+   в System.Net.HttpListener.Start()
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   в System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   в System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   в System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.HttpChannelListener`1.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   в System.ServiceModel.Channels.CommunicationObject.Open()
+   в MessengerHost.Program.Main(String[] args) в c:\Programming\MessengerServer\MessengerHost\Program.cs:строка 25

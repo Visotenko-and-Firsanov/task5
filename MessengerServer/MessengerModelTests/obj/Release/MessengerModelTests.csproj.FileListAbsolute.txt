@@ -1,0 +1,27 @@
+C:\Programming\MessengerServer\MessengerModelTests\obj\Release\MessengerModelTests.csprojResolveAssemblyReference.cache
+C:\Programming\MessengerServer\MessengerModelTests\bin\Release\MessengerModelTests.exe.config
+C:\Programming\MessengerServer\MessengerModelTests\bin\Release\MessengerModelTests.exe
+C:\Programming\MessengerServer\MessengerModelTests\bin\Release\MessengerModelTests.pdb
+C:\Programming\MessengerServer\MessengerModelTests\bin\Release\Model.dll
+C:\Programming\MessengerServer\MessengerModelTests\bin\Release\nunit.framework.dll
+C:\Programming\MessengerServer\MessengerModelTests\bin\Release\Model.pdb
+C:\Programming\MessengerServer\MessengerModelTests\obj\Release\MessengerModelTests.exe
+C:\Programming\MessengerServer\MessengerModelTests\obj\Release\MessengerModelTests.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerModelTests\bin\Release\MessengerModelTests.exe.config
+C:\Users\Андрей\Desktop\MessengerServer\MessengerModelTests\bin\Release\MessengerModelTests.exe
+C:\Users\Андрей\Desktop\MessengerServer\MessengerModelTests\bin\Release\MessengerModelTests.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerModelTests\bin\Release\Model.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerModelTests\bin\Release\nunit.framework.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerModelTests\bin\Release\Model.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerModelTests\obj\Release\MessengerModelTests.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\Desktop\MessengerServer\MessengerModelTests\obj\Release\MessengerModelTests.exe
+C:\Users\Андрей\Desktop\MessengerServer\MessengerModelTests\obj\Release\MessengerModelTests.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerModelTests\bin\Release\MessengerModelTests.exe.config
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerModelTests\bin\Release\MessengerModelTests.exe
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerModelTests\bin\Release\MessengerModelTests.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerModelTests\bin\Release\Model.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerModelTests\bin\Release\nunit.framework.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerModelTests\bin\Release\Model.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerModelTests\obj\Release\MessengerModelTests.csprojResolveAssemblyReference.cache
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerModelTests\obj\Release\MessengerModelTests.exe
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerModelTests\obj\Release\MessengerModelTests.pdb

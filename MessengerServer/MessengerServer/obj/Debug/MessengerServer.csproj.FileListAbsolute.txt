@@ -10,3 +10,5 @@ C:\Programming\MessengerServer\MessengerServer\bin\Debug\MessengerDal.dll
 C:\Programming\MessengerServer\MessengerServer\bin\Debug\EntityFramework.dll
 C:\Programming\MessengerServer\MessengerServer\bin\Debug\MessengerDal.pdb
 C:\Programming\MessengerServer\MessengerServer\bin\Debug\EntityFramework.xml
+C:\Programming\MessengerServer\MessengerServer\bin\Debug\log4net.dll
+C:\Programming\MessengerServer\MessengerServer\bin\Debug\log4net.xml

@@ -1,0 +1,46 @@
+C:\Programming\MessengerServer\MessengerServer\bin\Release\MessengerServer.dll.config
+C:\Programming\MessengerServer\MessengerServer\bin\Release\MessengerServer.dll
+C:\Programming\MessengerServer\MessengerServer\bin\Release\MessengerServer.pdb
+C:\Programming\MessengerServer\MessengerServer\bin\Release\log4net.dll
+C:\Programming\MessengerServer\MessengerServer\bin\Release\log4net.xml
+C:\Programming\MessengerServer\MessengerServer\obj\Release\MessengerServer.csprojResolveAssemblyReference.cache
+C:\Programming\MessengerServer\MessengerServer\obj\Release\MessengerServer.dll
+C:\Programming\MessengerServer\MessengerServer\obj\Release\MessengerServer.pdb
+C:\Programming\MessengerServer\MessengerServer\bin\Release\MessengerDal.dll
+C:\Programming\MessengerServer\MessengerServer\bin\Release\EntityFramework.dll
+C:\Programming\MessengerServer\MessengerServer\bin\Release\Model.dll
+C:\Programming\MessengerServer\MessengerServer\bin\Release\MessengerDal.pdb
+C:\Programming\MessengerServer\MessengerServer\bin\Release\EntityFramework.xml
+C:\Programming\MessengerServer\MessengerServer\bin\Release\Model.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\bin\Release\MessengerServer.dll.config
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\bin\Release\MessengerServer.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\bin\Release\MessengerServer.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\bin\Release\log4net.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\bin\Release\MessengerDal.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\bin\Release\Model.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\bin\Release\MySql.Data.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\bin\Release\EntityFramework.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\bin\Release\MessengerDal.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\bin\Release\log4net.xml
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\bin\Release\Model.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\bin\Release\EntityFramework.xml
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\obj\Release\MessengerServer.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\obj\Release\MessengerServer.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerServer\obj\Release\MessengerServer.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\bin\Release\MessengerServer.dll.config
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\bin\Release\MessengerServer.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\bin\Release\MessengerServer.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\bin\Release\log4net.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\bin\Release\MessengerDal.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\bin\Release\Model.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\bin\Release\MySql.Data.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\bin\Release\EntityFramework.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\bin\Release\MySql.Data.Entity.EF6.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\bin\Release\MessengerDal.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\bin\Release\log4net.xml
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\bin\Release\Model.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\bin\Release\EntityFramework.xml
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\obj\Release\MessengerServer.csprojResolveAssemblyReference.cache
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\obj\Release\MessengerServer.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerServer\obj\Release\MessengerServer.pdb

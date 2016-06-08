@@ -1,0 +1,50 @@
+C:\Programming\MessengerServer\MessengerDalTests\bin\Release\MessengerDalTests.dll
+C:\Programming\MessengerServer\MessengerDalTests\bin\Release\MessengerDalTests.pdb
+C:\Programming\MessengerServer\MessengerDalTests\bin\Release\MessengerDal.dll
+C:\Programming\MessengerServer\MessengerDalTests\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Programming\MessengerServer\MessengerDalTests\bin\Release\nunit.framework.dll
+C:\Programming\MessengerServer\MessengerDalTests\bin\Release\EntityFramework.dll
+C:\Programming\MessengerServer\MessengerDalTests\bin\Release\log4net.dll
+C:\Programming\MessengerServer\MessengerDalTests\bin\Release\Model.dll
+C:\Programming\MessengerServer\MessengerDalTests\bin\Release\MessengerDal.pdb
+C:\Programming\MessengerServer\MessengerDalTests\bin\Release\EntityFramework.xml
+C:\Programming\MessengerServer\MessengerDalTests\bin\Release\log4net.xml
+C:\Programming\MessengerServer\MessengerDalTests\bin\Release\Model.pdb
+C:\Programming\MessengerServer\MessengerDalTests\obj\Release\MessengerDalTests.csprojResolveAssemblyReference.cache
+C:\Programming\MessengerServer\MessengerDalTests\obj\Release\MessengerDalTests.dll
+C:\Programming\MessengerServer\MessengerDalTests\obj\Release\MessengerDalTests.pdb
+C:\Programming\MessengerServer\MessengerDalTests\bin\Release\MessengerDalTests.dll.config
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\MessengerDalTests.dll.config
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\MessengerDalTests.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\MessengerDalTests.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\MessengerDal.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\MySql.Data.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\nunit.framework.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\log4net.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\Model.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\EntityFramework.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\MessengerDal.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\log4net.xml
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\Model.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\bin\Release\EntityFramework.xml
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\obj\Release\MessengerDalTests.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\obj\Release\MessengerDalTests.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDalTests\obj\Release\MessengerDalTests.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\MessengerDalTests.dll.config
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\MessengerDalTests.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\MessengerDalTests.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\MessengerDal.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\MySql.Data.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\MySql.Data.Entity.EF6.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\nunit.framework.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\log4net.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\Model.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\EntityFramework.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\MessengerDal.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\log4net.xml
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\Model.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\bin\Release\EntityFramework.xml
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\obj\Release\MessengerDalTests.csprojResolveAssemblyReference.cache
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\obj\Release\MessengerDalTests.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDalTests\obj\Release\MessengerDalTests.pdb

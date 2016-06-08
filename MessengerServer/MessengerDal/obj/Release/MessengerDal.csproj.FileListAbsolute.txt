@@ -1,0 +1,42 @@
+C:\Programming\MessengerServer\MessengerDal\bin\Release\MessengerDal.dll.config
+C:\Programming\MessengerServer\MessengerDal\bin\Release\MessengerDal.dll
+C:\Programming\MessengerServer\MessengerDal\bin\Release\MessengerDal.pdb
+C:\Programming\MessengerServer\MessengerDal\bin\Release\EntityFramework.dll
+C:\Programming\MessengerServer\MessengerDal\bin\Release\log4net.dll
+C:\Programming\MessengerServer\MessengerDal\bin\Release\Model.dll
+C:\Programming\MessengerServer\MessengerDal\bin\Release\MySql.Data.dll
+C:\Programming\MessengerServer\MessengerDal\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Programming\MessengerServer\MessengerDal\bin\Release\Model.pdb
+C:\Programming\MessengerServer\MessengerDal\bin\Release\EntityFramework.xml
+C:\Programming\MessengerServer\MessengerDal\bin\Release\log4net.xml
+C:\Programming\MessengerServer\MessengerDal\obj\Release\MessengerDal.csprojResolveAssemblyReference.cache
+C:\Programming\MessengerServer\MessengerDal\obj\Release\MessengerDal.dll
+C:\Programming\MessengerServer\MessengerDal\obj\Release\MessengerDal.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\bin\Release\MessengerDal.dll.config
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\bin\Release\MessengerDal.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\bin\Release\MessengerDal.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\bin\Release\EntityFramework.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\bin\Release\log4net.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\bin\Release\Model.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\bin\Release\MySql.Data.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\bin\Release\Model.pdb
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\bin\Release\EntityFramework.xml
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\bin\Release\log4net.xml
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\obj\Release\MessengerDal.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\obj\Release\MessengerDal.dll
+C:\Users\Андрей\Desktop\MessengerServer\MessengerDal\obj\Release\MessengerDal.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\bin\Release\MessengerDal.dll.config
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\bin\Release\MessengerDal.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\bin\Release\MessengerDal.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\bin\Release\EntityFramework.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\bin\Release\log4net.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\bin\Release\Model.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\bin\Release\MySql.Data.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\bin\Release\MySql.Data.Entity.EF6.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\bin\Release\Model.pdb
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\bin\Release\EntityFramework.xml
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\bin\Release\log4net.xml
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\obj\Release\MessengerDal.csprojResolveAssemblyReference.cache
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\obj\Release\MessengerDal.dll
+E:\Учёба\То-что нужно закомитить\MessengerServer\MessengerDal\obj\Release\MessengerDal.pdb
