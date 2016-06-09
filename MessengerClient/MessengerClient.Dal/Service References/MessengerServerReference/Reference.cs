@@ -168,10 +168,10 @@ namespace MessengerClient.Dal.MessengerServerReference {
         System.Threading.Tasks.Task SendMessageAsync(string usernameSenders, string usernameReceiver, string message);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMessengerServerService/FindUser", ReplyAction="http://tempuri.org/IMessengerServerService/FindUserResponse")]
-        MessengerClient.Dal.MessengerServerReference.Friend FindUser(string requiredUsername);
+        MessengerClient.Dal.MessengerServerReference.Friend[] FindUser(string requiredUsername);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMessengerServerService/FindUser", ReplyAction="http://tempuri.org/IMessengerServerService/FindUserResponse")]
-        System.Threading.Tasks.Task<MessengerClient.Dal.MessengerServerReference.Friend> FindUserAsync(string requiredUsername);
+        System.Threading.Tasks.Task<MessengerClient.Dal.MessengerServerReference.Friend[]> FindUserAsync(string requiredUsername);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMessengerServerService/UploadingUserData", ReplyAction="http://tempuri.org/IMessengerServerService/UploadingUserDataResponse")]
         void UploadingUserData(MessengerClient.Dal.MessengerServerReference.User user);
@@ -234,11 +234,11 @@ namespace MessengerClient.Dal.MessengerServerReference {
             return base.Channel.SendMessageAsync(usernameSenders, usernameReceiver, message);
         }
         
-        public MessengerClient.Dal.MessengerServerReference.Friend FindUser(string requiredUsername) {
+        public MessengerClient.Dal.MessengerServerReference.Friend[] FindUser(string requiredUsername) {
             return base.Channel.FindUser(requiredUsername);
         }
         
-        public System.Threading.Tasks.Task<MessengerClient.Dal.MessengerServerReference.Friend> FindUserAsync(string requiredUsername) {
+        public System.Threading.Tasks.Task<MessengerClient.Dal.MessengerServerReference.Friend[]> FindUserAsync(string requiredUsername) {
             return base.Channel.FindUserAsync(requiredUsername);
         }
         

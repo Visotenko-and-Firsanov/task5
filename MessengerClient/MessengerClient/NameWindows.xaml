@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MessengerClient"
         mc:Ignorable="d"
-        Title="NameWindows" Height="142" Width="299"
-        WindowStartupLocation="CenterScreen">
+        Title="VFMessenger" Height="142" Width="299"
+        WindowStartupLocation="CenterScreen" Icon="Resoureces/Logo.ico">
     <Grid Margin="0,0,0,-1">
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="40" Margin="10,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" RenderTransformOrigin="0.5,0.625"/>
         <Label x:Name="label" Content="      Введите ваше имя!" HorizontalAlignment="Left" Height="35" Margin="50,15,0,0" VerticalAlignment="Top" Width="195" FontSize="14.667"/>

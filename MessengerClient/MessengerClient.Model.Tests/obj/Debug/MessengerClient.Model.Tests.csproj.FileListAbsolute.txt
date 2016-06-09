@@ -1,8 +1,0 @@
-F:\task\task5\task5\MessengerClient\MessengerClient.Model.Tests\bin\Debug\MessengerClient.Model.Tests.dll
-F:\task\task5\task5\MessengerClient\MessengerClient.Model.Tests\bin\Debug\MessengerClient.Model.Tests.pdb
-F:\task\task5\task5\MessengerClient\MessengerClient.Model.Tests\bin\Debug\MessengerClient.Model.dll
-F:\task\task5\task5\MessengerClient\MessengerClient.Model.Tests\bin\Debug\nunit.framework.dll
-F:\task\task5\task5\MessengerClient\MessengerClient.Model.Tests\bin\Debug\MessengerClient.Model.pdb
-F:\task\task5\task5\MessengerClient\MessengerClient.Model.Tests\obj\Debug\MessengerClient.Model.Tests.csprojResolveAssemblyReference.cache
-F:\task\task5\task5\MessengerClient\MessengerClient.Model.Tests\obj\Debug\MessengerClient.Model.Tests.dll
-F:\task\task5\task5\MessengerClient\MessengerClient.Model.Tests\obj\Debug\MessengerClient.Model.Tests.pdb

@@ -1,16 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using MessengerClient.Dal;
 using MessengerClient.Presentation;
 
@@ -28,33 +17,40 @@ namespace MessengerClient
             InitializeComponent();
         }
 
+        public void ShowMessage(string message)
+        {
+            MessageBox.Show(message);
+        }
+
         public event EventHandler LoadProfile;
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-
             Name = textBox.Text;
 
+            Name = Name.Trim();
 
-            LocalStorage storage = new LocalStorage();
+            MainWindow mainWindow = new MainWindow(Name);
 
-            ConnectionServer awayStorage = new ConnectionServer();
+            var awayStorage = new ConnectionServer();
 
-            //NameWindows nameWindows = new NameWindows();
-
-            MainWindow mainWindow = new MainWindow();
-
-            MyProfilePresenter myProfile = new MyProfilePresenter(storage, awayStorage, this, mainWindow);
+            MyProfilePresenter myProfile = new MyProfilePresenter(awayStorage, this, mainWindow);
 
             myProfile.Initialize();
 
-            //nameWindows.Show();
+            try
+            {
+                LoadProfile?.Invoke(this, EventArgs.Empty);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Нет соединения с сервером, попробуйте позже");
+                mainWindow.Close();
+                Close();
+                return;
+            }
 
             Hide();
-
-            //MainWindow windows = new MainWindow();
-
-            LoadProfile?.Invoke(this, EventArgs.Empty);
 
             mainWindow.Show();
 

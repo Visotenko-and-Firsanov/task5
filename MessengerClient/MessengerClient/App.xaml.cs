@@ -15,6 +15,10 @@ namespace MessengerClient
     /// </summary>
     public partial class App : Application
     {
-        
+        App()
+        {
+
+
+        }
     }
 }

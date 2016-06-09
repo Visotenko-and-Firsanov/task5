@@ -34,7 +34,7 @@
   <xs:element name="FindUserResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/MessengerDal" minOccurs="0" name="FindUserResult" nillable="true" type="q2:Friend" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/MessengerDal" minOccurs="0" name="FindUserResult" nillable="true" type="q2:ArrayOfFriend" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

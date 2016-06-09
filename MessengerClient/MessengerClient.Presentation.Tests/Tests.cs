@@ -58,18 +58,7 @@ namespace MessengerClient.Presentation.Tests
             mockView.Verify(foo => foo.UpdateContacts(new List<int>()), Times.Never);
         }
 
-        [Test]
-        public void MyProfilePresenterTest1()
-        {
-            var storageMock = new Mock<IStorage>();
-            var connectionMock = new Mock<IConnection>();
-            var mainWindowsMock = new Mock<IMainWindowView>();
-            var nameWindowMock = new Mock<INameWindowView>();
-
-            var presenter = new MyProfilePresenter(storageMock.Object, connectionMock.Object, nameWindowMock.Object,
-                mainWindowsMock.Object);
-
-        }
+    
 
     }
 }

@@ -11,15 +11,14 @@ namespace MessengerClient.Presentation
         private readonly IConnection _connection;
         private readonly IMainWindowView _mainWindow;
         private readonly INameWindowView _nameWindow;
-        private readonly IStorage _storage;
+        private IChooseContactWindowView _chooseContactWindow;
         private INewContactWindowView _newContactWindow;
         private MyProfile _profile;
 
 
-        public MyProfilePresenter(IStorage storage, IConnection connection, INameWindowView nameWindow,
+        public MyProfilePresenter(IConnection connection, INameWindowView nameWindow,
             IMainWindowView mainWindow)
         {
-            _storage = storage;
             _connection = connection;
             _nameWindow = nameWindow;
             _mainWindow = mainWindow;
@@ -38,37 +37,53 @@ namespace MessengerClient.Presentation
 
         private void UpdateStatus(object sender, PropertyChangedEventArgs e)
         {
-            if (_connection.StatusUpdate.Value)
-                _mainWindow.OnlineContactsList.Add(_connection.StatusUpdate.Key);
-            else
-                _mainWindow.OnlineContactsList.Remove(_connection.StatusUpdate.Key);
+            _profile = MyProfileEdditor.ChangeStatus(_profile, _connection.StatusUpdate.Key,
+                _connection.StatusUpdate.Value);
+
+
+            ContaktsListPresenter.GetContaktsViewModel(_profile.MyContacts, _mainWindow);
+
+
+            _mainWindow.ChangeStatusContact(_connection.StatusUpdate.Key);
         }
 
         private void DeleteContact(object sender, EventArgs eventArgs)
         {
             _profile = MyProfileEdditor.DeleteContact(_profile, _mainWindow.ActiveContact);
+
+            _mainWindow.ContaktsMessageHistory.Remove(_mainWindow.ActiveContact);
         }
 
         private void SendMessage(object sender, EventArgs eventArgs)
         {
             _connection.SendMessage(_profile.MyName, _mainWindow.ActiveContact, _mainWindow.Message);
 
-            _profile = MyProfileEdditor.SendMessage(_profile, _mainWindow.ActiveContact, _mainWindow.Message);
-
-            ContaktsListPresenter.GetContaktsViewModel(_profile.MyContacts, _mainWindow);
+            _mainWindow.ContaktsMessageHistory[_mainWindow.ActiveContact] += ReformatMessage.Reformat(_profile.MyName,
+                _mainWindow.Message);
         }
 
         private void LoadMessage(object sender, EventArgs eventArgs)
         {
+            var contactName = _connection.Messages.Key;
+            var contactMessage = _connection.Messages.Value;
+
+            if (MyProfileEdditor.FindIndex(_profile.MyContacts, contactName) == -1)
+            {
+                AddNewContact(new Contact { Name = contactName, Online = true });
+            }
+            UpdateStatus(sender, null);
+
+            if (contactMessage != null && !_mainWindow.UnreadMessages.Contains(contactName))
+                _mainWindow.UnreadMessages.Add(contactName);
+
             var keysList = _mainWindow.ContaktsMessageHistory.Keys;
 
             if (keysList.Contains(_connection.Messages.Key))
-                _mainWindow.ContaktsMessageHistory[_connection.Messages.Key] += _connection.Messages.Value;
+                _mainWindow.ContaktsMessageHistory[contactName] += contactMessage;
             else
             {
-                _mainWindow.ContaktsMessageHistory.Add(_connection.Messages.Key, _connection.Messages.Value);
+                _mainWindow.ContaktsMessageHistory.Add(contactName, contactMessage);
             }
-
 
             _mainWindow.UpdateMessageScreen();
         }
@@ -76,32 +91,71 @@ namespace MessengerClient.Presentation
         private void CreateNewContactWindow(object sender, EventArgs eventArgs)
         {
             _newContactWindow = _mainWindow.CreateContactWindow();
-            _newContactWindow.AddContact += AddNewContact;
+            _newContactWindow.AddContact += CreateChooseContactWindow;
             _newContactWindow.ShowWindow();
         }
 
-        private void AddNewContact(object sender, EventArgs eventArgs)
+        private void CreateChooseContactWindow(object sender, EventArgs eventArgs)
         {
-            //реализация через IConnection
+            var nameContact = _newContactWindow.GetName();
 
-            var contact = _connection.AddContact(_newContactWindow.GetName());
+            var contacts = _connection.AddContact(nameContact);
 
-            if (contact == null)
-                _newContactWindow.ShowMessage("Такого контакта не найдено");
+            if (contacts.Count == 0)
+            {
+                _newContactWindow.ShowMessage("Таких контакта не найдено");
+                return;
+            }
 
-            //var contact = new Contact {Name = _newContactWindow.GetName()};
+            _chooseContactWindow = _newContactWindow.CreateChooseContactWindow();
+
+            var namesContactList = new List<string>();
+            var onlineContactList = new List<string>();
+
+            foreach (var cont in contacts)
+            {
+                namesContactList.Add(cont.Name);
+
+                if (cont.Online)
+                    onlineContactList.Add(cont.Name);
+            }
+
+            _chooseContactWindow.UpdateContacts(namesContactList, onlineContactList);
+
+            _chooseContactWindow.ChooseContact += AddNewContactFromWindow;
+            _chooseContactWindow.ShowWindow();
+
+            _newContactWindow.Close();
+        }
+
+        private void AddNewContactFromWindow(object sender, EventArgs eventArgs)
+        {
+            var contact = new Contact
+            {
+                Name = _chooseContactWindow.ActiveContact,
+                Online =
+                    _chooseContactWindow.OnlineContactList.Contains(_chooseContactWindow.ActiveContact)
+            };
+
+            AddNewContact(contact);
+
+            _chooseContactWindow.Close();
+        }
+
+        private void AddNewContact(Contact contact)
+        {
+            if (_profile.MyName == contact.Name || _profile.MyContacts.Contains(contact) || _mainWindow.ContaktsMessageHistory.ContainsKey(contact.Name))
+                return;
 
             _profile.MyContacts.Add(contact);
 
-            _newContactWindow.Close();
-
+            _mainWindow.ContaktsMessageHistory.Add(contact.Name, contact.MessageHistory);
             ContaktsListPresenter.GetContaktsViewModel(_profile.MyContacts, _mainWindow);
         }
 
         private void SaveProfile(object sender, EventArgs eventArgs)
         {
             _connection.Save(_profile);
-            //_storage.Save(_profile);
         }
 
         private void LoadProfile(object sender, EventArgs eventArgs)
@@ -110,14 +164,12 @@ namespace MessengerClient.Presentation
             {
                 MyName = _nameWindow.Name
             };
-            /*
-            _profile = _storage.Load(_nameWindow.Name) ?? new MyProfile
-            {
-                MyName = _nameWindow.Name
-            };
-            */
+
+
             if (_profile.MyContacts == null)
                 _profile.MyContacts = new List<Contact>();
+
+            ContaktsListPresenter.FillContactsMessages(_profile.MyContacts, _mainWindow);
 
             ContaktsListPresenter.GetContaktsViewModel(_profile.MyContacts, _mainWindow);
         }

@@ -19,7 +19,7 @@ namespace MessengerClient.Presentation
             return profile;
         }
 
-        public static MyProfile SendMessage(MyProfile profile, string contactName, string message)
+        public static MyProfile AddMessage(MyProfile profile, string contactName, string message)
         {
             var i = FindIndex(profile.MyContacts, contactName);
 
@@ -35,7 +35,7 @@ namespace MessengerClient.Presentation
             return profile;
         }
 
-        private static int FindIndex(List<Contact> list, string contactName)
+        public static int FindIndex(List<Contact> list, string contactName)
         {
             int index = -1;
 
@@ -47,6 +47,19 @@ namespace MessengerClient.Presentation
             }
 
             return index;
+        }
+
+        public static MyProfile ChangeStatus(MyProfile profile, string contactName, bool status)
+        {
+
+            var i = FindIndex(profile.MyContacts, contactName);
+
+            if (i == -1)
+                return profile;
+
+            profile.MyContacts[i].Online = status;
+
+            return profile;
         }
     }
 }

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MessengerClient.Model;
 
 namespace MessengerClient.Presentation
@@ -15,7 +11,7 @@ namespace MessengerClient.Presentation
         void SendMessage(string myName, string receverName, string message);
 
         void Save(MyProfile profile);
-        Contact AddContact(string name);
+        List<Contact> AddContact(string name);
 
         MyProfile LogIn(string name);
 

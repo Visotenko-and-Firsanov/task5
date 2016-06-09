@@ -9,7 +9,7 @@ namespace MessengerClient
     /// </summary>
     public partial class NewContactWindow : Window, INewContactWindowView
     {
-
+        private ChooseContactWindow _newContactWindow;
         public NewContactWindow()
         {
             InitializeComponent();
@@ -32,14 +32,16 @@ namespace MessengerClient
             MessageBox.Show(message);
         }
 
-        void INewContactWindowView.Close()
+        public IChooseContactWindowView CreateChooseContactWindow()
         {
-            Close();
+            _newContactWindow = new ChooseContactWindow();
+
+            return _newContactWindow;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            if (AddContact != null) AddContact.Invoke(this, EventArgs.Empty);
+            AddContact?.Invoke(this, EventArgs.Empty);
         }
     }
 }
