@@ -10,12 +10,16 @@ using MessengerClient.Presentation;
 
 namespace MessengerClient.Dal
 {
-    public class ConnectionServer : IConnection, IMessengerServerServiceCallback
+    /// <summary>
+    /// Реализация интерфейса, созданного в Presentation(IConnection)
+    /// </summary>
+    public class ConnectionServer : IConnection, IMessengerServerServiceCallback//IMSSC - интерфейс на сервере, для возможности вызова меня
     {
-        private IMessengerServerService _client;
-        private KeyValuePair<string, string> _messages;
-        private KeyValuePair<string, bool> _statusUpdate;
+        private IMessengerServerService _client;//Стандартное поле клиента в WCF
+        private KeyValuePair<string, string> _messages;//Имя пользователя и сообщение
+        private KeyValuePair<string, bool> _statusUpdate;//Изменение статуса клиента(для сервера)
 
+        //Запуск клиента, подключение к серверу по TCP
         public ConnectionServer()
         {
             var context = new InstanceContext(this);
@@ -28,6 +32,7 @@ namespace MessengerClient.Dal
             set { _client = value; }
         }
 
+        //Инициализация польователя
         public void Save(MyProfile profile)
         {
             if (profile == null)
@@ -44,11 +49,13 @@ namespace MessengerClient.Dal
             _client.UploadingUserData(myUser);
         }
 
+        //Отсылает сообщения выбранному пользлователю
         public void SendMessage(string myName, string receiverName, string message)
         {
             _client.SendMessage(myName, receiverName, message);
         }
 
+        //Добавление контакта по имени
         public List<Contact> AddContact(string name)
         {
             var tempCont = _client.FindUser(name);
@@ -60,6 +67,7 @@ namespace MessengerClient.Dal
             }).ToList();
         }
 
+        //Авторизация на сервере
         public MyProfile LogIn(string name)
         {
             var profile = _client.UploadUserData(name);
@@ -90,16 +98,19 @@ namespace MessengerClient.Dal
         public event PropertyChangedEventHandler MessangePropertyChanged;
         public event PropertyChangedEventHandler StatusPropertyChanged;
 
+        //Выдет сообщения от пользователся
         public void LoadMessage(string name, string message)
         {
             Messages = new KeyValuePair<string, string>(name, ReformatMessage.Reformat(name, message));
         }
 
+        // Функция вызывается на сервере, 
         public void ContactsStatusUpdate(string usernameReceiver, bool online)
         {
             StatusUpdate = new KeyValuePair<string, bool>(usernameReceiver, online);
         }
 
+        //Кастует профиль на сервере под профиль клиента
         private MyProfile TransformProfileView(User serverProfile)
         {
             var serverContactList = serverProfile.Contacts;
@@ -120,6 +131,7 @@ namespace MessengerClient.Dal
             return profile;
         }
 
+        //Возвращает историю сообщений с заданными пользователем
         private string TakeMessageHistory(User serverProfile, string contactName)
         {
             var resultMessage = new StringBuilder();

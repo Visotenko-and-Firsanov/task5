@@ -30,8 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\Nunit\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,8 +48,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Service References\MessengerServerReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\MessengerServerReference\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MessengerServerReference\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MessengerServerReference\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MessengerServerReference\item3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MessengerServerReference\MessengerClient.Dal.Tests.MessengerServerReference.Friend.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessengerServerReference\MessengerClient.Dal.Tests.MessengerServerReference.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessengerServerReference\MessengerServerService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MessengerServerReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessengerServerReference\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessengerServerReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessengerServerReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessengerServerReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MessengerClient.Dal\MessengerClient.Dal.csproj">
+      <Project>{35e6a7eb-063a-4a65-aa75-473e27dba8eb}</Project>
+      <Name>MessengerClient.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MessengerClient.Model\MessengerClient.Model.csproj">
+      <Project>{d37e6c38-a658-4d39-96ec-d3edd56300e8}</Project>
+      <Name>MessengerClient.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MessengerClient.Presentation\MessengerClient.Presentation.csproj">
+      <Project>{28caa702-3b41-4fc5-95db-8165fe8d6791}</Project>
+      <Name>MessengerClient.Presentation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

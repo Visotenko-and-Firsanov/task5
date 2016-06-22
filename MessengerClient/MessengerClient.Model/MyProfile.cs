@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace MessengerClient.Model
 {
-    [Serializable]
     public class MyProfile
     {
         public List<Contact> MyContacts { get; set; }

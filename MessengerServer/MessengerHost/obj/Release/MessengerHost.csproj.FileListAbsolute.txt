@@ -55,3 +55,6 @@ E:\Учёба\То-что нужно закомитить\MessengerServer\Messen
 E:\task5\task5\MessengerServer\MessengerHost\bin\Release\MessengerHost.exe.config
 E:\task5\task5\MessengerServer\MessengerHost\obj\Release\MessengerHost.exe
 E:\task5\task5\MessengerServer\MessengerHost\obj\Release\MessengerHost.pdb
+F:\task\task5\MessengerServer\MessengerHost\bin\Release\MessengerHost.exe.config
+F:\task\task5\MessengerServer\MessengerHost\obj\Release\MessengerHost.exe
+F:\task\task5\MessengerServer\MessengerHost\obj\Release\MessengerHost.pdb

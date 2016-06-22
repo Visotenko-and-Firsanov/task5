@@ -103,7 +103,7 @@ namespace MessengerClient.Presentation
 
             if (contacts.Count == 0)
             {
-                _newContactWindow.ShowMessage("Таких контакта не найдено");
+                _newContactWindow.ShowMessage("Таких контактов не найдено");
                 return;
             }
 

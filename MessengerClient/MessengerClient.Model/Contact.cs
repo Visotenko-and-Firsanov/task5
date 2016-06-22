@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace MessengerClient.Model
 {
-    [Serializable]
     public class Contact
     {
         public string MessageHistory { get; set; }

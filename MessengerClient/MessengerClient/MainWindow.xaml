@@ -5,28 +5,92 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MessengerClient"
         mc:Ignorable="d"
-        Title="VFMessenger" Height="428.803" Width="733.135" 
+        Title="MainWindow" Height="428.803" Width="733.135"
         WindowStartupLocation="CenterScreen"
-        Closed="Messenger_Unload" Icon="Resoureces/Logo.ico">
+        Closed="Messenger_Unload" ResizeMode="CanMinimize" Icon="Resoureces/Logo.ico"
+        d:DataContext="{d:DesignData }">
+
+
+    <Window.Resources>
+        <local:BackgroundConverter x:Key="myConverter" />
+        <Style x:Key="myItemStyle" TargetType="{x:Type ListViewItem}">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <MultiBinding Converter="{StaticResource myConverter}">
+                        <Binding RelativeSource="{RelativeSource Self}"/>
+                        <Binding Path="OnlineContactsList" RelativeSource="{RelativeSource AncestorType=Window}" PresentationTraceSources.TraceLevel="High" />
+                        <Binding Path="UnreadMessages" RelativeSource="{RelativeSource AncestorType=Window}" PresentationTraceSources.TraceLevel="High" />
+                    </MultiBinding>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="BorderThickness" Value="2"/>
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <MultiBinding Converter="{StaticResource myConverter}">
+                                <Binding RelativeSource="{RelativeSource Self}"/>
+                                <Binding Path="OnlineContactsList" RelativeSource="{RelativeSource AncestorType=Window}" PresentationTraceSources.TraceLevel="High" />
+                                <Binding Path="UnreadMessages" RelativeSource="{RelativeSource AncestorType=Window}" PresentationTraceSources.TraceLevel="High" />
+                            </MultiBinding>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderThickness" Value="2"/>
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <MultiBinding Converter="{StaticResource myConverter}">
+                                <Binding RelativeSource="{RelativeSource Self}"/>
+                                <Binding Path="OnlineContactsList" RelativeSource="{RelativeSource AncestorType=Window}" PresentationTraceSources.TraceLevel="High" />
+                                <Binding Path="UnreadMessages" RelativeSource="{RelativeSource AncestorType=Window}" PresentationTraceSources.TraceLevel="High" />
+                            </MultiBinding>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+
     <Grid x:Name="Messenger" Margin="0,0,2,0" RenderTransformOrigin="0.492,0.489">
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="573*"/>
-            <ColumnDefinition Width="112*"/>
+            <ColumnDefinition Width="606*" />
+            <ColumnDefinition Width="39*" />
+            <ColumnDefinition Width="80*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="messegeHistory" HorizontalAlignment="Left" Height="299" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="540" RenderTransformOrigin="0.498,0.491" ScrollViewer.CanContentScroll="True"/>
-        <TextBox x:Name="messageField" HorizontalAlignment="Left" Height="53" Margin="10,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452" ScrollViewer.CanContentScroll="True"/>
-        <Button x:Name="sendMessageButton" Content="Отправить" HorizontalAlignment="Left" Height="53" Margin="462,325,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.508,0.521" Click="Send" IsDefault="True" IsEnabled="False"/>
-        <ListView x:Name="listView"  Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="299" Margin="570,10,0,0" VerticalAlignment="Top" Width="143" IsSynchronizedWithCurrentItem="False" SelectionChanged="listView_SelectionChanged">
+        <TextBox x:Name="messegeHistory" HorizontalAlignment="Left" Height="299" Margin="10,10,0,0" TextWrapping="Wrap"
+                 VerticalAlignment="Top" Width="540" RenderTransformOrigin="0.498,0.491"
+                 ScrollViewer.CanContentScroll="True" IsEnabled="False" FontSize="13.333" FontWeight="Bold" />
+        <TextBox x:Name="messageField" HorizontalAlignment="Left" Height="53" Margin="10,325,0,0" TextWrapping="Wrap"
+                 VerticalAlignment="Top" Width="452" ScrollViewer.CanContentScroll="True" />
+        <Button x:Name="sendMessageButton" Content="Отправить" HorizontalAlignment="Left" Height="53"
+                Margin="462,325,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.508,0.521"
+                Click="Send" IsDefault="True" IsEnabled="False"/>
+        <ListView x:Name="listView" ItemContainerStyle="{DynamicResource myItemStyle}"
+                  HorizontalAlignment="Left" Margin="570,10,0,95" Width="143"
+                   SelectionChanged="listView_SelectionChanged" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Grid.ColumnSpan="3">
+            <ListView.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.329"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ListView.RenderTransform>
             <ListView.View>
                 <GridView>
                     <GridView.Columns>
-                        <GridViewColumn Header="Контакты"/>
+                        <GridViewColumn Header="Контакты"  />
                     </GridView.Columns>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="removeButton" Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.ColumnSpan="2" Margin="570,324,0,0" IsEnabled="False" Click="removeButton_Click"/>
-        <Button x:Name="addContactButton" Content="Добавить" Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="40,324,0,0" VerticalAlignment="Top" Width="68" Click="addContactButton_Click"/>
+        <Button x:Name="removeButton" Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70"
+                Grid.ColumnSpan="2" Margin="570,324,0,0" IsEnabled="False" Click="removeButton_Click" Height="20"/>
+        <Button x:Name="addContactButton" Content="Добавить" Grid.Column="2" HorizontalAlignment="Left" Height="20"
+                Margin="1,324,0,0" VerticalAlignment="Top" Width="68" Click="addContactButton_Click"/>
 
     </Grid>
 </Window>
